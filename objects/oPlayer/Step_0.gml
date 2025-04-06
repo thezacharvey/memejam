@@ -13,16 +13,12 @@ if(current_state == state_p_in_door){
 }
 
 if(current_state == state_p_exiting_door){
-	if(place_meeting(x,y,oDoor)){
-		while(place_meeting(x,y,oDoor)){
-			x +=   e_col.facing_dir
-		}
-		var margin = sprite_width;
-		x += margin * e_col.facing_dir
-		e_col = noone;
-	}else{
-		current_state = state_p_idle
-	}
+	e_col.locked = true;
+	x = e_col.x;
+	y = e_col.y;
+	e_col = noone;
+	current_state = state_p_idle
+	
 }
 
 

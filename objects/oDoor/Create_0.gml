@@ -9,3 +9,4 @@ vsp = 0;
 current_state = state_e_idle;
 
 facing_dir = 0;
+locked = false;

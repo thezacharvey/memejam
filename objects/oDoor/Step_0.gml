@@ -1,5 +1,10 @@
 
 
+if(locked){
+	image_blend = c_red;
+	return;
+}
+
 if(current_state == state_e_elevating){
 	
 	vsp = -elv_spd;
