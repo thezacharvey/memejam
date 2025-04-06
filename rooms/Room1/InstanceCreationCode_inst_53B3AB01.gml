@@ -1,0 +1,1 @@
+facing_dir = 1;
